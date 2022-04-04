@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+.collaction{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.collaction span{
+    background-color: blueviolet;
+    padding: 10px;
+    font-size: 20px;
+      cursor: pointer;
+}
+.ListItems{
+    /* width: 25%; */
+    position: relative;
+}
+.insideLi_collaction{
+    display: none;
+    margin-top: 20px;
+    position: absolute;
+    width: 200px;
+}
+.ListItems:hover span{
+    margin-top: 2px;
+    border-top: 2px solid greenyellow;
+}
+.ListItems:hover .insideLi_collaction{
+    display: block;
+}
+.inside_listItems>a{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.inside_listItems>a:hover{
+    background-color: green;
+}
